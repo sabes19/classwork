@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sabes\\source\\repos\\Deliverable 2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4507F791-A305-43BC-96A4-E75678D4668F}|Deliverable 2\\Deliverable 2.csproj|c:\\users\\sabes\\source\\repos\\deliverable 2\\deliverable 2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4507F791-A305-43BC-96A4-E75678D4668F}|Deliverable 2\\Deliverable 2.csproj|solutionrelative:deliverable 2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sabes\\source\\repos\\Deliverable 2\\Deliverable 2\\Program.cs",
+              "RelativeDocumentMoniker": "Deliverable 2\\Program.cs",
+              "ToolTip": "C:\\Users\\sabes\\source\\repos\\Deliverable 2\\Deliverable 2\\Program.cs",
+              "RelativeToolTip": "Deliverable 2\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T08:01:25.463Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
