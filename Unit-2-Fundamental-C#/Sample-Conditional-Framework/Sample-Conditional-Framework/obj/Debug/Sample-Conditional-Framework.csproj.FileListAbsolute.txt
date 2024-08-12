@@ -1,0 +1,7 @@
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Sample-Conditional-Framework\Sample-Conditional-Framework\bin\Debug\Sample-Conditional-Framework.exe.config
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Sample-Conditional-Framework\Sample-Conditional-Framework\bin\Debug\Sample-Conditional-Framework.exe
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Sample-Conditional-Framework\Sample-Conditional-Framework\bin\Debug\Sample-Conditional-Framework.pdb
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Sample-Conditional-Framework\Sample-Conditional-Framework\obj\Debug\Sample-Conditional-Framework.csproj.AssemblyReference.cache
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Sample-Conditional-Framework\Sample-Conditional-Framework\obj\Debug\Sample-Conditional-Framework.csproj.CoreCompileInputs.cache
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Sample-Conditional-Framework\Sample-Conditional-Framework\obj\Debug\Sample-Conditional-Framework.exe
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Sample-Conditional-Framework\Sample-Conditional-Framework\obj\Debug\Sample-Conditional-Framework.pdb

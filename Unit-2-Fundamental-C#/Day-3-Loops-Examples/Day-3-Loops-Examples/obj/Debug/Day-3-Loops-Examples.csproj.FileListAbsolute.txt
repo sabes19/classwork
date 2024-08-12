@@ -1,0 +1,7 @@
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Day-3-Loops-Examples\Day-3-Loops-Examples\bin\Debug\Day-3-Loops-Examples.exe.config
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Day-3-Loops-Examples\Day-3-Loops-Examples\bin\Debug\Day-3-Loops-Examples.exe
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Day-3-Loops-Examples\Day-3-Loops-Examples\bin\Debug\Day-3-Loops-Examples.pdb
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Day-3-Loops-Examples\Day-3-Loops-Examples\obj\Debug\Day-3-Loops-Examples.csproj.AssemblyReference.cache
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Day-3-Loops-Examples\Day-3-Loops-Examples\obj\Debug\Day-3-Loops-Examples.csproj.CoreCompileInputs.cache
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Day-3-Loops-Examples\Day-3-Loops-Examples\obj\Debug\Day-3-Loops-Examples.exe
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Day-3-Loops-Examples\Day-3-Loops-Examples\obj\Debug\Day-3-Loops-Examples.pdb

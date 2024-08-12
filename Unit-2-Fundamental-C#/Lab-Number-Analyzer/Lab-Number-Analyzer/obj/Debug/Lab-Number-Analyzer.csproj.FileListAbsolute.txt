@@ -1,0 +1,7 @@
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Lab-Number-Analyzer\Lab-Number-Analyzer\obj\Debug\Lab-Number-Analyzer.csproj.AssemblyReference.cache
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Lab-Number-Analyzer\Lab-Number-Analyzer\obj\Debug\Lab-Number-Analyzer.csproj.CoreCompileInputs.cache
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Lab-Number-Analyzer\Lab-Number-Analyzer\bin\Debug\Lab-Number-Analyzer.exe.config
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Lab-Number-Analyzer\Lab-Number-Analyzer\bin\Debug\Lab-Number-Analyzer.exe
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Lab-Number-Analyzer\Lab-Number-Analyzer\bin\Debug\Lab-Number-Analyzer.pdb
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Lab-Number-Analyzer\Lab-Number-Analyzer\obj\Debug\Lab-Number-Analyzer.exe
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Lab-Number-Analyzer\Lab-Number-Analyzer\obj\Debug\Lab-Number-Analyzer.pdb
