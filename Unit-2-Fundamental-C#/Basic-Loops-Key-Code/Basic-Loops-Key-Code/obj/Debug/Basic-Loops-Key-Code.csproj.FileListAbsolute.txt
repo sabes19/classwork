@@ -1,0 +1,7 @@
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Basic-Loops-Key-Code\Basic-Loops-Key-Code\obj\Debug\Basic-Loops-Key-Code.csproj.AssemblyReference.cache
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Basic-Loops-Key-Code\Basic-Loops-Key-Code\obj\Debug\Basic-Loops-Key-Code.csproj.CoreCompileInputs.cache
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Basic-Loops-Key-Code\Basic-Loops-Key-Code\bin\Debug\Basic-Loops-Key-Code.exe.config
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Basic-Loops-Key-Code\Basic-Loops-Key-Code\bin\Debug\Basic-Loops-Key-Code.exe
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Basic-Loops-Key-Code\Basic-Loops-Key-Code\bin\Debug\Basic-Loops-Key-Code.pdb
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Basic-Loops-Key-Code\Basic-Loops-Key-Code\obj\Debug\Basic-Loops-Key-Code.exe
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Basic-Loops-Key-Code\Basic-Loops-Key-Code\obj\Debug\Basic-Loops-Key-Code.pdb

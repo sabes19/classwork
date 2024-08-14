@@ -1,0 +1,7 @@
+C:\Users\sabes\workspace\classwork\Basic-Loops-Key-Code-Do-While\Basic-Loops-Key-Code-Do-While\obj\Debug\Basic-Loops-Key-Code-Do-While.csproj.AssemblyReference.cache
+C:\Users\sabes\workspace\classwork\Basic-Loops-Key-Code-Do-While\Basic-Loops-Key-Code-Do-While\obj\Debug\Basic-Loops-Key-Code-Do-While.csproj.CoreCompileInputs.cache
+C:\Users\sabes\workspace\classwork\Basic-Loops-Key-Code-Do-While\Basic-Loops-Key-Code-Do-While\bin\Debug\Basic-Loops-Key-Code-Do-While.exe.config
+C:\Users\sabes\workspace\classwork\Basic-Loops-Key-Code-Do-While\Basic-Loops-Key-Code-Do-While\bin\Debug\Basic-Loops-Key-Code-Do-While.exe
+C:\Users\sabes\workspace\classwork\Basic-Loops-Key-Code-Do-While\Basic-Loops-Key-Code-Do-While\bin\Debug\Basic-Loops-Key-Code-Do-While.pdb
+C:\Users\sabes\workspace\classwork\Basic-Loops-Key-Code-Do-While\Basic-Loops-Key-Code-Do-While\obj\Debug\Basic-Loops-Key-Code-Do-While.exe
+C:\Users\sabes\workspace\classwork\Basic-Loops-Key-Code-Do-While\Basic-Loops-Key-Code-Do-While\obj\Debug\Basic-Loops-Key-Code-Do-While.pdb

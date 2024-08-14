@@ -11,7 +11,7 @@ namespace Unit_2_Day_4_Switch_Example
             Console.WriteLine("Please enter a sentence");
             string theLine = Console.ReadLine();
 
-            Console.WriteLine("\nYou entered: \"" + theLine + "\"");
+            AConsole.WriteLine("\nYou entered: \"" + theLine + "\"");
 
             Console.WriteLine("\nThe line in all lowercase is: ");
             Console.WriteLine(theLine.ToLower());
@@ -22,16 +22,18 @@ namespace Unit_2_Day_4_Switch_Example
             Console.WriteLine("\nIt contains: \n");
 
             Console.WriteLine("\t" + theLine.Length + " characters");
+                // in the count.Chars method:typeToCount    , sourceText
             Console.WriteLine("\t" + countChars("Consonants", theLine) + " consonants");
-            Console.WriteLine("\t" + countChars("Vowels", theLine) + " vowels");
-            Console.WriteLine("\t" + countChars("Numbers", theLine) + " numbers");
-            Console.WriteLine("\t" + countChars("Special", theLine) + " special characters");
+            Console.WriteLine("\t" + countChars("Vowels"    , theLine) + " vowels");
+            Console.WriteLine("\t" + countChars("Numbers"   , theLine) + " numbers");
+            Console.WriteLine("\t" + countChars("Special"   , theLine) + " special characters");
 
             string[] words = theLine.Split(' ');
             Console.WriteLine("\t" + words.Length + " words");
 
             /***************************************************************************************
              *           theLine = "Welcome to C#!"
+             *             
              *           string[] words = theLine.Split(' ');  // Split the string based on a space
              *
              *   (index) |   [0]   | [1] | [2] |
@@ -109,13 +111,14 @@ namespace Unit_2_Day_4_Switch_Example
             for (int i = 0; i < textToSearch.Length; i++)
             {
                 if (textToSearch[i] == 'a'
-                    || textToSearch[i] == 'e'
-                    || textToSearch[i] == 'i'
+                    || textToSearch[i] == 'e' // use i to index through the string
+                    || textToSearch[i] == 'i' // char literals are placed inside ' ' NOT " "
                     || textToSearch[i] == 'o'
                     || textToSearch[i] == 'u')
                 {
                     vowelCount++;
                 }
+                
                 else
                 {
                     if (textToSearch[i] >= 'a' && sourceText[i] <= 'z')
@@ -138,14 +141,14 @@ namespace Unit_2_Day_4_Switch_Example
                     }
                 }
             }
-
+            // return the count requested in the first parameter passed to use 
             switch (typeToCount)
             {
-                case "Vowels":
+                case "Vowels": // type vowels
                 {
                     return vowelCount;
                 }
-                case "Consonants":
+                case "Consonants": // Type consonants
                 {
                     return consonantCount;
                 }
@@ -157,9 +160,10 @@ namespace Unit_2_Day_4_Switch_Example
                 {
                     return specialCharCount;
                 }
-                default:
+                default: // if a type you werent expecting was requested...
                 {
-                    return -1;
+                    return -1; // return an obviously incorrect value
+
                 }
             }
         }
