@@ -1,0 +1,49 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sabes\\workspace\\classwork\\Unit-2-Fundamental-C#\\Basic-Loops-Numbers\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC534BE-129B-44E8-9A2C-552CCBE79F47}|Basic-Loops-Numbers\\Basic-Loops-Numbers.csproj|c:\\users\\sabes\\workspace\\classwork\\unit-2-fundamental-c#\\basic-loops-numbers\\basic-loops-numbers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC534BE-129B-44E8-9A2C-552CCBE79F47}|Basic-Loops-Numbers\\Basic-Loops-Numbers.csproj|solutionrelative:basic-loops-numbers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sabes\\workspace\\classwork\\Unit-2-Fundamental-C#\\Basic-Loops-Numbers\\Basic-Loops-Numbers\\Program.cs",
+              "RelativeDocumentMoniker": "Basic-Loops-Numbers\\Program.cs",
+              "ToolTip": "C:\\Users\\sabes\\workspace\\classwork\\Unit-2-Fundamental-C#\\Basic-Loops-Numbers\\Basic-Loops-Numbers\\Program.cs",
+              "RelativeToolTip": "Basic-Loops-Numbers\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T21:40:22.495Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Basic-Loops-Numbers\Basic-Loops-Numbers\bin\Debug\Basic-Loops-Numbers.exe.config
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Basic-Loops-Numbers\Basic-Loops-Numbers\bin\Debug\Basic-Loops-Numbers.exe
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Basic-Loops-Numbers\Basic-Loops-Numbers\bin\Debug\Basic-Loops-Numbers.pdb
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Basic-Loops-Numbers\Basic-Loops-Numbers\obj\Debug\Basic-Loops-Numbers.csproj.AssemblyReference.cache
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Basic-Loops-Numbers\Basic-Loops-Numbers\obj\Debug\Basic-Loops-Numbers.csproj.CoreCompileInputs.cache
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Basic-Loops-Numbers\Basic-Loops-Numbers\obj\Debug\Basic-Loops-Numbers.exe
+C:\Users\sabes\workspace\classwork\Unit-2-Fundamental-C#\Basic-Loops-Numbers\Basic-Loops-Numbers\obj\Debug\Basic-Loops-Numbers.pdb
