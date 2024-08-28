@@ -17,17 +17,32 @@ namespace Day_5__Method_Example
                 // Display the value we got from the method
                 Console.WriteLine("Number entered was: " + aValue);
             }
+            // Call a method to return a number and a string (2 things)
+            // a method can only return more than one value we use out parameters
+            //
+            // the out parameters allows you to pass a variable to a method that is set by the method
+
             Console.WriteLine("\nThanks for using my app!"); // Verify the app ended
 
             Console.WriteLine("\nPress enter to end program...");
             Console.ReadLine();
         } // End of Main()
-    /****************************************************************
-     * Helper methods used by Main()
-     ******************************************************************/
-    // method starts with a method signature:  return-type name(parameters)
+        /****************************************************************
+         * Helper methods used by Main()
+         ******************************************************************/
+        // method starts with a method signature:  return-type name(parameters)
+        // 
+        // This method will get a numeric value from the user
+        // It does not return data using the typical return statement
+        //
+        // The keyword out says the method will set the value for calling method
 
-    // This method will get a numeric value from the user
+        static void getANumAndAString(out double aNum, out string aName)
+        {
+            // set the out parameter for aNum
+            aNum = getANumber
+        }
+
     // It must be static because it will be used by the static method Main() (more later)
     // this method receives no parameters and returns a double (a double can also hold an int value)
         static double getANumber()

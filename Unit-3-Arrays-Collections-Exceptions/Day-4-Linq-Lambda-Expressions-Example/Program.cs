@@ -1,16 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System;                       // give me access to C# system
+using System.Collections.Generic;   // Give me access to C# Collections Stuff
+using System.Linq;                  // Give me access to LINQ
 
 namespace Day_4_Linq_Lambda_Expressions_Example
 {
     internal class Program
     {
         static List<string> starFleetPersonnel = new List<string>();
-
+        
+        // data defined outside of any method (including main())
+        // still inside the class program
+        // this way it is available and shared by all methods
+        // scope
+        //          (instead of passing as a parameter to methods that need access to it)
+        // It must be made static bc it's used in static methods like Main()
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Linq/Lambda Expression Demo");
-
+            
+            // call a method to load the list that is holding our data
             LoadData();
 
             WriteSeparatorLine("List of People in our List");
@@ -32,19 +40,60 @@ namespace Day_4_Linq_Lambda_Expressions_Example
                 Console.Write("\nEnter value to search for: ");
                 string searchString = Console.ReadLine();
 
-                int matchCount = 0;
-                foreach (string anEntry in starFleetPersonnel)
+                // search the list for matching elements based on user inputs
+                //                      using standard c# coding elements
+                //
+                //int matchCount = 0;
+                //          name-of-current-item in-this-list
+                //foreach (string anEntry in starFleetPersonnel)
+                //{
+                //    if (anEntry.ToLower().Contains(searchString.ToLower()))
+                //    {
+                //        matchCount++;
+                //        DisplayLine(anEntry);
+                //    }
+                //}
+
+                // search the list for matching elements based on user inputs
+                //                using LINQ Where() method
+                //
+                // Syntax: Where(name-of-curr-item => condition-using-name-of-curr-item)
+                //
+                // a foreach loop is implied by the Where() 
+                //           it will go through the list one item at a time and assign the item
+                //                                       to the name to left of the =>
+                //
+                // the list name is implied from being left of the dot in .Where()
+
+                var matchingEntries = starFleetPersonnel.Where(anEntry => anEntry.ToLower().Contains(searchString.ToLower())); // all done in one loop
+
+                // at this point the matching entries variable hold all entries that match the condition...
+
+                Console.WriteLine(("\n" + matchingEntries.Count()) + " entries found matching \'" + searchString + "\'");
+
+                // Loop through the result and display the entries 
+                foreach (string aPerson in matchingEntries)
                 {
-                    if (anEntry.ToLower().Contains(searchString.ToLower()))
-                    {
-                        matchCount++;
-                        DisplayLine(anEntry);
-                    }
+                    DisplayLine(aPerson);
                 }
 
-                Console.WriteLine("\n" + matchCount + " entries found matching \'" + searchString + "\'");
-            }
+                
+            } // end of while loop for searching for lines
+            // Display the item in the list that matches a user specified value
 
+            // define a variable to hold what the user wants 
+            Console.WriteLine("Please enter the value of want you me to search for: ");
+            string whatTheyWant = Console.ReadLine();
+
+            // Use the LINQ First() method to search the list for the first occurence of what they want
+            var theFirstOne = starFleetPersonnel.First(aLine =>.Contains(whatTheyWant));
+
+            Console.WriteLine($"\nThe first occurance of {whatTheyWant} is in: {theFirstOne}");
+
+
+            // First() or Defualt() will always work
+
+            Console.WriteLine("\n" + matchingEntries.Count() + " entries found matching \'" + searchString + "\'");
             Console.WriteLine("\nThanks for trying out the Linq/Lambda Expression Demo");
             PauseProgram();
 
