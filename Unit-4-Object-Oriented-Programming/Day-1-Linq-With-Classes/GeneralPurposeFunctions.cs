@@ -1,9 +1,29 @@
 ﻿using System;
 
+// a name space is a group of related things whose name and purpose is defined in the namespace
+// allows things be named the smae and have different meaning on their context
+//
+//  like the word: read pronounce "red" or "reed" depending on the context
+//  allows us to seperate things based on context
+
 namespace GeneralPurposeFunctions
 {
+        // a class is a group of related parts of an application
+        // a class is used to instantiate/create objects to be used in the application
+        // Object-oriented programs depends on objects which described by classes
+        // a class is like a blue print
+        // a class is like all the ingredients and instructions for baking a cake but it hasnt been assembled
+
     public class CommonlyUsedFunctions
     {
+        // if no constructor is supplied for a class c# defines a 0-arg constructor
+        // that sets all data to standard defualts: null for object, 0 for numeric, false for boolean
+        
+        // this class has no data so there is nothing to initialize - so no constructor needed
+        // we can still instantiate data
+
+
+
         /************************************************************************************
          * Display a separator line block with a message
          ************************************************************************************/

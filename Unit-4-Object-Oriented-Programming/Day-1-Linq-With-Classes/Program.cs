@@ -1,8 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using GeneralPurposeFunctions;
-using StarTrekStuff;
+﻿using System;                       // give me access to the System
+using System.Collections.Generic;   // give access to generic collection stuff
+using System.Linq;                  // give access to Linq
+
+    // using some programmer defined code
+    // the code is in files included in the project folder
+
+using GeneralPurposeFunctions;      // give me access to the GeneralPurposeFunction (namespace) stuff
+using StarTrekStuff;                // give me access to the StarTrekStuff (namespace) stuff
+
 
 namespace Day_1_Linq_with_Classes
 {
@@ -14,18 +19,35 @@ namespace Day_1_Linq_with_Classes
         //      (instead of passing as a parameter to methods that need access to it)
         // It must be made static because it's used in static methods like Main()
 
-        static CommonlyUsedFunctions commonCode = new CommonlyUsedFunctions();
+        // give me an object containing the CommonlyUsedFunctions 
+        // Objects are needed to perform object oriented programming
+        // use an object to access methods defined in the class for the object
 
-        static List<StarFleetPersonnel> castOfPeople = new List<StarFleetPersonnel>();
+        //     data-type             name       = new data-type 
+        static CommonlyUsedFunctions commonCode = new CommonlyUsedFunctions(); // run the 0-arg constructor
+
+        // give me a list of StarFleetPersonal Objects 
+        // You have done: List<string> names         = new List<string>();
+        static List<StarFleetPersonnel> castOfPeople = new List<StarFleetPersonnel>(); // run 0-arg
+
+        // define an array of StarFleetPersonal objects
+
+        static StarFleetPersonnel[] starTrekFolks = new StarFleetPersonnel[5];
+
+
+
+
+
 
         static void Main(string[] args)
         {
+
 
             Console.WriteLine("Welcome to the Linq/Lambda Expression Demo");
 
             // Call a method to load the List that holding our data
             LoadData();
-
+            // using the CommonlyUsedFunctions object to access a method in its class
             commonCode.WriteSeparatorLine("List of People in our List");
 
             foreach (StarFleetPersonnel aPerson in castOfPeople)
@@ -61,12 +83,22 @@ namespace Day_1_Linq_with_Classes
                 //              from the List that made the condition true
                 //
                 // Note use of var type to hold the result of .Where()
+                //
+                // use an object reference to access things in an object
+                //
+                // Reference object: objectName.some-thing-in-the-
+                //
+                // whenever we see a '.' the word to the left of the . is an object
+                // the word to the right of the dot is method if followed by () or data name
+                //
+                // an entry is a StarFleetPersonnel object
+                //      name is a variable defined in that StarFleetPersonal object
 
                 var matchingEntries =
                     castOfPeople.Where(anEntry => anEntry.name.ToLower().Contains(searchString.ToLower()));
 
                 // At this point the matchingEntries variable hold all List entries that match the condition
-
+    //          object.method()
                 Console.WriteLine(("\n" + matchingEntries.Count()) + " entries found matching \'" + searchString +
                                   "\'");
 
@@ -97,6 +129,9 @@ namespace Day_1_Linq_with_Classes
          ************************************************************************************/
         static void LoadData()
         {
+            castOfPeople = new List<StarFleetPersonnel>(); // add a default person - error ... 0-arg constructor
+            // use the List of StarFleetPersonnel object to add people to the list
+            // creat using the 3-arg constructor for the class
             castOfPeople.Add(new StarFleetPersonnel("James T Kirk", "Captain", "NCC-1701"));
             castOfPeople.Add(new StarFleetPersonnel("Jean Luc Picard", "Captain", "NCC-1701-D"));
             castOfPeople.Add(new StarFleetPersonnel("Jonathan Archer", "Captain", "NX-01"));
