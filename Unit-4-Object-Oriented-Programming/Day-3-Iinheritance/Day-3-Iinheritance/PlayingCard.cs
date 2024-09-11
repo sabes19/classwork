@@ -42,9 +42,9 @@ namespace Day_3_Inheritance
         // Define properties for access to data members
         public int CardValue // name is the data member in PascalCase
         {
-            get { return cardValue; } // getter - return the value in cardValue
-            set { cardValue = value; } // setter - set cardValue to value used when assigning
-            //          value is keyword representing the value assigned        
+            get { return cardValue; }   // getter - return the value in cardValue
+            set { cardValue = value; }  // setter - set cardValue to value used when assigning
+             //          value is keyword representing the value assigned        
         }
 
         public string CardSuit // name is the data member in PascalCase

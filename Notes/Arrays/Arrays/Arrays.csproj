@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E5133228-A04D-4D5A-B736-D03356AF62B4}</ProjectGuid>
+    <ProjectGuid>{A754D2B7-515F-4EA6-956C-DC6F2CC25A82}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Day_3_Iinheritance</RootNamespace>
-    <AssemblyName>Day-3-Iinheritance</AssemblyName>
+    <RootNamespace>Arrays</RootNamespace>
+    <AssemblyName>Arrays</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AmericanPlayingCard.cs" />
-    <Compile Include="GeneralPurposeFunctions.cs" />
-    <Compile Include="PlayingCard.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
