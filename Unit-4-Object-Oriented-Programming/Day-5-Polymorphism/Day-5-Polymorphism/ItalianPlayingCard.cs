@@ -77,8 +77,8 @@ namespace Day_5_Polymorphism
                 suitsColors.Add(DEFAULT_SUIT, DEFAULT_COLOR);
             }
 
-            // Validate card value - if invalid, reset to default value
-            // It is private so access is limited to members of this class
+            // Validate card value - if invalid, reset to default value   ------- "ValidateCardValue"
+            // It is private so access is limited to members of this class ------- " private"
             private bool ValidateCardValue()
             {
                 if ((base.CardValue < MIN_CARD_VALUE || base.CardValue > MAX_CARD_VALUE)  // Outside valid range

@@ -49,14 +49,16 @@ namespace Day_5_Polymorphism
         {
             return false;                          //     they can't be equal
         }
-
+        
         if (anObject == this)                      // if the same object...
         {
             return true;                           //    they must be equal
         }
 
         // Create a sub-class object from the generic object passed to the method
-        BlackJackCard secondCard = anObject as BlackJackCard;  // Note alternate casting syntax
+        //          so we can access the data and methods of the subclass
+            BlackJackCard secondCard = anObject as BlackJackCard;  // Note alternate casting syntax
+        //                                                         // instead of (BlackJackCard) anObject
 
         if(CardValue == secondCard.CardValue)      // If card value matches
         {
@@ -71,7 +73,7 @@ namespace Day_5_Polymorphism
         // Display an object of the class
         public override void ShowCard()
          {
-          Console.WriteLine($"AmericanPlayingCard: Value: {GetCardValueName()} ({base.CardValue}), Suit: {base.CardSuit}, Color: {base.CardColor}");
+          Console.WriteLine($"BlackJackCard: Value: {GetCardValueName()} ({base.CardValue}), Suit: {base.CardSuit}, Color: {base.CardColor}");
          }
 
         //---------------------------------------------------------------------
