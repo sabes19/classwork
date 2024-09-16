@@ -21,6 +21,9 @@ namespace Day_6_Interfaces
         /*************************************************************************************
          * Additional data required by the subclass
          ************************************************************************************/
+        //some of these constants have public access rather than private access
+        // this allows them to be refd with the className. or the object. notation
+        // ist ok as far as encapsulation is concerned bc they cannot be changed due to being a constant
         public  const int DEFAULT_CARD_VALUE = 0;
         private const string DEFAULT_COLOR = "Black";
         public  const string DEFAULT_SUIT = "Joker";

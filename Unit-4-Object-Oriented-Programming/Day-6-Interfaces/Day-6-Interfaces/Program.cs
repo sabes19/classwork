@@ -11,9 +11,42 @@ namespace Day_6_Interfaces
         static void Main(string[] args)
         {
             generalFuncs.WriteSeparatorLine("Welcome to our Deck of Cards Example!");
-            
+
+            // Instantiate a CardDeck to deal from and shuffle it
             generalFuncs.WriteSeparatorLine("Instantiating and displaying a deck of cards without Jokers");
             CardDeck deckOfCards = new CardDeck();
+            deckOfCards.Shuffle();
+
+            /*************************************************************************************
+             * Interface usage examples (PokerHand) 
+             ************************************************************************************/
+
+            // instantiate a PokerHand
+            PokerHand aPokerHand = new PokerHand();
+
+            // deal cards to the poker hand
+            for (int i = 0; i < PokerHand.NUMBER_CARDS_IN_HAND; i++)
+            {
+                
+                aPokerHand.AddCard(deckOfCards.DealACard());
+
+            }
+
+            // display the card in t he poker hand
+            aPokerHand.ShowHand();
+
+            generalFuncs.WriteSeparatorLine("Remove 3rd card from hand");
+
+
+
+
+
+
+
+            /*************************************************************************************
+             * Card deck examples
+             ************************************************************************************/
+           
             deckOfCards.ShowDeck();
             deckOfCards.Count();
 
@@ -36,9 +69,9 @@ namespace Day_6_Interfaces
                 if (card == null)
                 {
                     Console.WriteLine("!!!! Uh-oh - No cards left in current deck, getting new one !!!!");
-                    deckOfCards = new CardDeck();
-                    deckOfCards.Shuffle();
-                    card = deckOfCards.DealACard();
+                    deckOfCards = new CardDeck();       // create new deck
+                    deckOfCards.Shuffle();              // shuffle it
+                    card = deckOfCards.DealACard();     // deal from new deck
                 } 
                 card.ShowCard();
             }
