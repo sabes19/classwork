@@ -32,6 +32,17 @@ namespace BankAccountTests
      *
      *    Assert.Contains(expected, collection)        - True if the expected item is found in the collection
      *    Assert.DoesNotContain<(expected, collection) - True if the expected item is not found in the collection
+     *    
+     *    
+     *    
+     *    
+     *    
+     *    [Fact] - Identifies the start of a test (if missing, xUnit doesnt know its a test)
+     *    
+     *    XUnit tests return void and recieve no parameters
+     *    
+     *    The name of a test should describe in detail what you are testing
+     *    (its the only time being verbose is a good thing)
      * 
      **********************************************************************************************************************/
 
@@ -39,10 +50,10 @@ namespace BankAccountTests
     public class BankAccountTests
     {
         /*********************************************************************************************
-         * Test Constructors
+         * Test Constructors - do they initialize objects as expected
          *********************************************************************************************/
       
-        [Fact]
+        [Fact] // this marks the start of an xUnit test
         public void BankAccount_Is_Created_With_Correct_Information_When_Given_Valid_Balance()
         {
         // Arrange - Define data required for test
@@ -87,6 +98,7 @@ namespace BankAccountTests
             BankAccount testAccount2 = new BankAccount(testAcctOwner2, testValidStartingBalance);
 
             // Assert - Verify result of process execution
+            // Note: "fudge-factor" to indicate they are = to up to decimal places
             Assert.NotEqual(testAccount1.AccountNumber, testAccount2.AccountNumber);
         }
 
@@ -97,10 +109,21 @@ namespace BankAccountTests
         [Fact]
         public void Withdraw_Method_Withdraws_Proper_Amount()
         {
+
+            // Arrange
             string testAcctOwner = "TestAccount1";
-            double testValidStartingBalance = 100;
+            double testValidStartingBalance = 10000;
 
             BankAccount testAccount = new BankAccount(testAcctOwner, testValidStartingBalance);
+
+            // Act - run the method you are testing with the test data
+
+            testAccount.Withdraw(6000); // expecting 4000
+
+            // Assert
+            Assert.Equal(4000, testAccount.Balance);
+
+
 
             Assert.Equal(testAccount.Balance, testValidStartingBalance);
         }

@@ -16,6 +16,7 @@ namespace Day_7_Unit_Testing
          *                static - indicates  a Class variable
          **********************************************************************************************/
 
+        // used to generate new account numbers
         private static Random newAccountNumberGenerator = new Random();
 
         /***********************************************************************************************
@@ -74,16 +75,21 @@ namespace Day_7_Unit_Testing
 
         public BankAccount(string accountOwner, double startingBalance)
         {
-            if (startingBalance < 0)
+            if (startingBalance < 0) // cannot start with a negative balance
             {
-                startingBalance = 0;
+                startingBalance = 0; 
 
             }
-            this.accountOwner = accountOwner;
-            this.balance = startingBalance;
+            // the "this.xxxx" key word represnts the current object (object being initialized)
+            // this. is only required if a name is defined more than once
+            //      (usually when a parameter has the same name as a variable or property)
+            this.accountOwner = accountOwner; // 'this.' is required as variable and parameter have same name
+            this.balance = startingBalance;   // 'this.' optional as variable and parameter have different names
+
             this.AccountNumber = newAccountNumberGenerator.Next(1000000, 9999999).ToString();
 
         }
+        
 
         /*****************************************************************************************
          * Method Members - required by interface

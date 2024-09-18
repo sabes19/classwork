@@ -19,6 +19,11 @@ namespace Day_7_Enums
          * Enumerated Types for class
          *
          * Assign words to represent value to assist coding and data validation
+         * 
+         * Only the words defined for an enum are allowed in an enum variable of that type
+         * 
+         * Internally enums are assigned interer values starting at 0
+         *      you can assign a value you want if sequentially from 0 values dont work for the app
          ************************************************************************************/
 
         public enum ValidCardSuits
@@ -60,6 +65,7 @@ namespace Day_7_Enums
         // Some of these constants have public access rather than private access
         // This allows them to be referenced with the ClassName. or the Object. notation
         // It's OK as far as Encapsulation is concerned because they cannot be changes (constants)
+        //              enumName        variableName        enumName.eNumValue
         public const ValidCardValues DEFAULT_CARD_VALUE = ValidCardValues.Joker;
         public const ValidCardColors DEFAULT_COLOR      = ValidCardColors.Black;
         public const ValidCardSuits  DEFAULT_SUIT       = ValidCardSuits.Joker;
