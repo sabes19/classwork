@@ -46,6 +46,49 @@ namespace CheckingAccountTests
             // Assert - verify we get the expected value
             //          is the balance -100
             Assert.Equal(-100, testAccount.Balance);
+        } // End of unit test
+
+
+        [Fact]
+        public void Withdrawal_Over_Allowed_Overdraft_Ammount()
+        {
+            // Arrange - setup test data
+            double startBalance = 0;
+
+            CheckingAccount testAccount = new CheckingAccount("Ryan", startBalance);
+
+            // Act - run the process with data
+            testAccount.Withdraw(100);
+
+            // Assert - test results for validity
+            // Since the withdraw should not be allowed, the startBalance should be unchanged
+            Assert.Equal(startBalance, testAccount.Balance);
         }
-    }
-}
+
+        [Fact]
+        public void Withdrawal_Of_Allowed_Amount()
+        {
+            // Arrange 
+            double startBalance = 100;
+
+            CheckingAccount testAccount = new CheckingAccount("Jay", startBalance);
+
+            // Act
+
+            testAccount.Withdraw(100);
+
+            // Assert
+
+            Assert.Equal(0, testAccount.Balance);
+        }
+        
+
+
+
+
+
+
+
+
+    } // End of class holding the unit tests
+} // End of namespaces
