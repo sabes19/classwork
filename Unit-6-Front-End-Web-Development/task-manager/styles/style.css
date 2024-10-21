@@ -1,0 +1,26 @@
+body {
+    background-image: linear-gradient(to bottom, gray, lightgray); 
+}
+
+div.taskmanager-list{       /* .taskmanager-list would work as well */
+    display: inline-block;  /* multi-column display */
+    width: 300px;           /* fixed width column   */
+    background-color:rgb(240, 144, 144); 
+    border-radius: 2px; /* rounded corners */
+    vertical-align: top; /* aligns box to adjacent box */
+    min-height: 480px;
+}
+
+.card {                                     /* style each card in the list              */
+    background-color: rgb(206, 236, 149);
+    margin: 20px;                           /* spacing btn each card                    */
+    height: 50px;                           /* height of each card                      */ 
+}
+
+.cards {                                    /* style each item listed in a card         */
+    list-style-type: none;                  /* removes the numbering from the list item */
+    background-color: aqua;
+    margin: 20px;                           /* spacing btn each card                    */
+    min-height: 400px;
+    max-height: 400px;                          /* height of each card                      */ 
+}
