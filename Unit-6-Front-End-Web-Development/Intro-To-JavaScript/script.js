@@ -10,13 +10,31 @@
  */
 function variables() {
   // Declares a variable where the value cannot be changed
-  // Declares a variable those value can be changed
+  const aVariable = 31;
+  console.log(`The value in aVariable is: ${aVariable}`)     // will display a value on the screen
+
+  // interpolation can be done by using ` ` and $
+
+  
+
+    // Declares a variable those value can be changed   declare a variable with 'let'
+    let anotherVariable = "Frank"
+  console.log(`${anotherVariable} has ${aVariable} cookies.`)
+
   // Declares a variable that will always be an array
+let aArray = ["josh", 5, 7, "jay", true]
+console.log(aArray);
+console.table(aArray);
+
 }
 
 /**
  * Functions can also accept parameters.
  * Notice the parameters do not have types.
+ * 
+ * Compare two values x and y
+ *  == is loose equality   - only the values need to be the same, datatypes may differ
+ *  === is strict equality - both the vaules and the datatype 
  * @param {Number} param1 The first number to display
  * @param {Number} param2 The second number to display
  */
@@ -38,7 +56,7 @@ function equality(x, y) {
 
   console.log(`x == y : ${x == y}`); // true
   console.log(`x === y : ${x === y}`); // false
-}
+}z
 
 /**
  * Each value is inherently truthy or falsy.
@@ -60,7 +78,7 @@ function falsy(x) {
     - values can be arrays
     - or they can be functions
 */
-function objects() {
+function objects() {        // start of the object
   const person = {
     firstName: "James T.",
     lastName: "Kirk",
@@ -73,12 +91,25 @@ function objects() {
     ]
   };
 
-  // Log the object
 
+  // Log the object
+  console.log(person)   
+  console.log(table)
   // Log the first and last name
+  // access  objectname.attributename
+  console.log(`${person.firstName} ${person.lastName}`)
 
   // Log each employee
+
+  // since empoyee is an array - loop through to look through it
+  for(let i=0; i < person.employees.length; i++)
+    console.log(`Employee #${i+1}; person.employees[i]`)
+
+
+
+
 }
+
 
 /*
 ########################
