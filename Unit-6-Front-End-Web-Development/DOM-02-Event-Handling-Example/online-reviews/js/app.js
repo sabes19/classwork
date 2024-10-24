@@ -51,8 +51,11 @@ function setPageDescription() {
 /**
  * I will display all of the reviews in the reviews array
  */
-function displayReviews() {
+function displayReviews() {  
+    // if there is a template in the HTML - use it to add to the dom
+    // This will create HTML on the template in the HTML
   if ('content' in document.createElement('template')) {
+    //Loop through array elements
     reviews.forEach((review) => {
       displayReview(review);
     });
@@ -66,7 +69,9 @@ function displayReviews() {
  * @param {Object} review The review to display
  */
 function displayReview(review) {
+    //get a ref to the main main div
   const main = document.getElementById('main');
+    // get a ref to a copy of the template defined in the main div
   const tmpl = document.getElementById('review-template').content.cloneNode(true);
   tmpl.querySelector('h4').innerHTML = review.reviewer;
   tmpl.querySelector('h3').innerHTML = review.title;
@@ -80,6 +85,16 @@ function displayReview(review) {
 }
 
 // LECTURE STARTS HERE ---------------------------------------------------------------
+
+// Any time a user interacts with a web page an event is generated
+// an EVENT is a user interaction with a web page or a point in the life of the web page
+// hook - place yhou can interact based on a hook
+
+// we tell the browser to listen for an event for a particular event and let us process it
+// .addEventListener() is how you tell the browser which events you want to process
+// you provide an anonymous method to process the event (named method may also be suitable
+
+// when the DOM is created by the browser (DOMContentLoaded event) run the 3 functions we have to set up the page
 
 document.addEventListener('DOMContentLoaded', () => {
   setPageTitle();
