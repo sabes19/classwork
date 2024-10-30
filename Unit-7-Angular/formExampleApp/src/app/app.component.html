@@ -1,0 +1,19 @@
+<!-- this is html displayed as the home page by angular -->
+<!-- angular through main.ts, copmponent.ts and index.html specify this as the home page -->
+
+<!-- display a page title that the TypeScript code sets up-->
+<!-- I want to see data from the typescript code displayed on this page -->
+<!-- one way data binding describes data from typescript code being used in the HTML -->
+<!-- in the HTML put {{variable-name}} at the place where you want the value for variable displayed -->
+<!--                 moustache notation                                                                       -->
+
+<h2>{{pageHeading}}</h2> <!-- substitute in the value in the variable pageHeading from the typeScript code -->
+
+
+
+<!-- we want to have our form displayed as the home page -->
+<!-- we need to include the html tag that representys our form component -->
+<!-- the tag representing a component is just the component name inside -->
+
+<!-- the component looks like any other html except the name is in kabob-case -->
+<app-form-example></app-form-example>
