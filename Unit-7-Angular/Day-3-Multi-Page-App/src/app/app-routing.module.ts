@@ -10,7 +10,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { SampleFormComponent }  from './sample-form/sample-form.component';
 import { StateSealsComponent }  from './state-seals/state-seals.component';
 import { HomeComponent }        from './home/home.component';
-import { LearnerListComponent } from './learner-list/learner-list.component';
+import { LearnerListComponent } from './learner-list/learner-list.component'
+import { StudentListComponent } from './student-list/student-list.component';
 
 // the routes attribute defines the URL path-Component connection
 // it is an array of objects with each object specifing a URL path
@@ -22,9 +23,11 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   // if the URL path is /persinfo switch to the SampleFormComponent
   { path: 'persinfo', component: SampleFormComponent },
-  { path: 'learners', component: LearnerListComponent},
+  { path: 'students', component: StudentListComponent },
   // if the URL path is /stateseals switch to the StateSealsComponent
-  { path: 'stateseals', component: StateSealsComponent }
+  { path: 'stateseals', component: StateSealsComponent },
+  
+  { path: 'showSeals',  component: StateSealsComponent }
 ]
 @NgModule({
   declarations: [],

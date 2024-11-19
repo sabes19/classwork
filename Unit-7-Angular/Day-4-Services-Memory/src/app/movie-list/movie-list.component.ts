@@ -21,24 +21,31 @@ public moviesList : MoviesInfo [] ; // This is an array of MoviesInfo objects
 
 // constructor is used to initialize data in the component
 //
-// This style of constructor will define the variable, create a MoviesService object
-//                                       and assign that object to the variable
-//                                       using Dependency Injection
-//
-// Dependency Injection is the automatic creation of variables and objects required
-//
-// Dependeny Injection decouples the service from the code
-// (makes it much easier to change the service)
-//   
-// without Dependency Injection the code would look like this:
-//
-//     private movieService;   // define a variable to hold the service
-//
-//     constructor() {
-//                    movieService = new MoviesServices();// create the service
-//                   }                                    //    and assign it to the variable
-//                              
+/*
+   This style of constructor will define the variable, create a MoviesService object
+                                         and assign that object to the variable
+                                         using Dependency Injection
+
+  Dependency Injection is the automatic creation of variables and objects required
+
+  Dependeny Injection decouples the service from the code
+  (makes it much easier to change the service)
+
+   without Dependency Injection the code would look like this:
+
+       private movieService;   // define a variable to hold the service
+
+       constructor() {
+                      movieService = new MoviesServices();// create the service
+                     }                                    //    and assign it to the variable
+
+*/
+
+// The constructor for component is automatically run when the component is instantiated by Angular
+
+//             this movieService object is automatically instantiated and passed to this constructor
 constructor(private movieService  : MoviesService ) {
+  // When this component is instantiated we will call 
   // Call the service method to send back the current list of movies from the data source
   this.moviesList = movieService.getMoviesList(); // Initialize our moviesList from service
   //  1. movieService.getMoviesList() - go to the movieService and run the method getMoviesList

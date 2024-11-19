@@ -10,12 +10,15 @@
         <th>Released</th>
         <th>Director</th>
     </tr>
+    <!-- @ngFor on the tr-tag will generate on table row for reach movie in movielist -->
+    <!-- {{ variable }} will one-way bind a variable to the web page -->
     <tr *ngFor="let aMovie of moviesList">
         <td>{{aMovie.title}}</td>
         <td id="relyear">{{aMovie.releaseYear}}</td>
         <td>{{aMovie.director}}</td>
 </tr>    
 </table>
+<!-- routerLink attribute indicates a path to be sent to the router when button is called -->
 <input type="button" 
        id="addMovieButton" 
        value="Add Movie" 

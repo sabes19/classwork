@@ -3,15 +3,15 @@ import { Product }        from '../../models/product';// Gain access to the Prod
 import { CommonModule }   from '@angular/common';     // Gain access to common Angular directives such as *ngFor and @ngIf
 import { ProductService } from '../../services/product.service'; // Gain access to data and functions in ProductService
 
-@Component({
-  selector: 'app-product-menu', // html tag name to reference the component
-  standalone: true, // This component a standalone entity
-                    // It doesn't need to be declared in an NgModule, unlike traditional Angular components.
-                    // Allows Angular to process the component more efficiently and provides better application organization
-  imports: [CommonModule],      // Tell Angular you are using features defined in the CommonModule code of Angular (required by *ngFor)
-  templateUrl: './product-menu.component.html',
-  styleUrl: './product-menu.component.css'
-})
+// @Component({
+//   selector: 'app-product-menu', // html tag name to reference the component
+//   standalone: true, /* This component a standalone entity */
+//                     // It doesn't need to be declared in an NgModule, unlike traditional Angular components.
+//                     // Allows Angular to process the component more efficiently and provides better application organization
+//   imports: [CommonModule],      // Tell Angular you are using features defined in the CommonModule code of Angular (required by *ngFor)
+//   templateUrl: './product-menu.component.html',
+//   styleUrl: './product-menu.component.css'
+// }) 
 export class ProductMenuComponent {
 
 // heading title for the page  

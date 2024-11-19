@@ -9,6 +9,7 @@ import { HomeComponent }   from './home/home.component';
   selector: 'app-root',  // This is what is used to include this component 
                          //      on a page 
   standalone: true,      // Added in Angular 17 to allow components to ne independent
+    // we must declare any external angular components we are using to include this
   imports: [RouterOutlet, NavBarComponent, HomeComponent], // identifies things used
   templateUrl: './app.component.html',  // Where to find the html file
   styleUrl: './app.component.css'       //       and css file

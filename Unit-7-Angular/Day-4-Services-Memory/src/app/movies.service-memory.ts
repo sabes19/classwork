@@ -46,9 +46,9 @@ export class MoviesService {
       }
   // This method will receive a MoviesInfo object and add it to our data source (listOfMovies)
       addMovies(newMovie : MoviesInfo) {      
-        console.table(newMovie)          // optional - verify new movie data
+        // console.table(newMovie)          // optional - verify new movie data
         this.listOfMovies.push(newMovie) // store the movie in the data source
-        console.table(this.listOfMovies) // optional - verify new movie was added to the array
+        // console.table(this.listOfMovies) // optional - verify new movie was added to the array
       }
     
 }
