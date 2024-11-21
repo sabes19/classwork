@@ -40,12 +40,24 @@
 ----------------------------------------------------------------------------------------
 -- Classic Syntax join
 ----------------------------------------------------------------------------------------
+select gambler_name, casino_name, room_type -- columbs to be indicated in the result
+	from gambler							-- code one table on the from
+	inner join							-- type of join
+	host									-- code another table
+	on gambler.id = host.id					-- join condition coded in the ON phrase
+
+
+
 
 ----------------------------------------------------------------------------------------
 -- Modern Syntax join
 ----------------------------------------------------------------------------------------                                            
-                
-                   
+select gambler_name, host.casino_name, location, room_type     
+	from gambler
+	inner join
+	hoston gambler.id = host.id
+	inner join
+	on casino.casino_name
                    
                    
                    
