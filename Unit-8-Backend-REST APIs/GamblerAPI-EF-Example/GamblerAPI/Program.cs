@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore; // Gain access to Entity Framework
  * 
  * It uses the "Builder Design Pattern" to initialize various options
  * 
- * In the "Builder Design Pattern, an object is initialized step-by-step
+ * In the "Builder Design Pattern, an object is initialized step-by-step 
  * using individual methods to set properties in the object instead of constructors
  * and then runs the "build" method to actual instatiate the
  * object using the properties previously set.
@@ -27,7 +27,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<GamblerDbContext>(option =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("vegasdb")));
 
-// Enable CORS for the app
+// Enable CORS for the app -  who can send request to the server (who can we share data with)
 // Allow all requests from anywhere for any method for testing purposes
 //     we would normally restrict which domains/methods we would accepts requests from
 builder.Services.AddCors(options =>
@@ -39,6 +39,7 @@ builder.Services.AddCors(options =>
         });
 });
 
+// this is how it know what it is
 // Register everything that is needed for Web API Development.
 //    This includes support for Controllers, Model Binding, API Explorer, Authorization, CORS et al
 builder.Services.AddControllers();
@@ -59,7 +60,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// Add app endpoints 
+// Add app endpoints - Paths and HTTP requests we defined in the controller
 app.MapControllers();
 
 // Add use of Cross Origin Resource Sharing to control what can access this all

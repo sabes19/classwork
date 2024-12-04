@@ -18,6 +18,10 @@ namespace GamblerAPI.Controllers
         }
 
         // Method to handle HTTP GET for URL path: "/api/Gamblers"  - root path ("api") defined above
+        // async on the method indicates this method does async calls
+        // it returns a Task object containing a List of Gambler class objects
+        // HTTP server processing converts the List of Gamblers to JSON and returns it to the client
+
         [HttpGet("Gamblers")]
         public async Task<List<Gambler>> GetAllGamblers() // Calls to Entity Framework are asynchrous - hencae async attribute 
         {
@@ -30,19 +34,26 @@ namespace GamblerAPI.Controllers
         public async Task<Model.Gambler?> GamblerDetailsAsync(int? id)
         {
             // Call Entity Framework to retrieve Gambler with id passed in URL
+            // Retrieve by primary key
             var aGambler = await _context.Gamblers
-                .FirstOrDefaultAsync(m => m.Id == id);
+                                         .FirstOrDefaultAsync(m => m.Id == id);
 
             return aGambler;  // Return Gambler retrieved from data source
         }
 
         // Method to handle HTTP POST for URL path: "/api/Gamblers/create" - root path "api" defined above
         //     Data to be added to the data source will be passed in the body of the HTTP POST request as JSON
+        // [Bind(list-of-class-variables)] Tells EF which class variables to use
+        // when creating the object being passed as a parameter from the JSON sent to the server
+        // 
+        // 
+        // 
         [HttpPost("Gamblers/create")]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<Gambler>> Create(
             [Bind("Id,Name,Address,BirthDate,Salary")] Model.Gambler aGambler)  // Instantiate a Gambler object using JSON in request
         {
+            // You should never add bad/invalid data to a database - very difficult to remove
             if (ModelState.IsValid)                   // If data passed passes all validity checks...
             {
                 _context.Add(aGambler);               //      Call Entity Framework to add data to data source
