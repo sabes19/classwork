@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CallAPIsConsole": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
