@@ -1,0 +1,23 @@
+<div>
+  <!-- Display list of places -->
+  <h1>Places I've Been</h1>
+  <div *ngFor="let place of places">
+    <p><strong>ID:</strong> {{ place.id }}</p>
+    <p><strong>Name:</strong> {{ place.name }}</p>
+    <p><strong>First Time:</strong> {{ place.firstTime }}</p>
+  </div>
+
+  <!-- Add a new place -->
+  <h2>Add a new Place</h2>
+  <form (ngSubmit)="addPlace()">
+    <label>
+      <strong>Place Name</strong>
+      <input type="text" [(ngModel)]="newPlace.name" name="name" required />
+    </label>
+    <label>
+      <strong>First Time</strong>
+      <input type="checkbox" [(ngModel)]="newPlace.firstTime" name="firstTime" />
+    </label>
+    <button type="submit">Add new place</button>
+  </form>
+</div>

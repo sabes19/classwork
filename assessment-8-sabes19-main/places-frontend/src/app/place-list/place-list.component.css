@@ -1,0 +1,17 @@
+h1, h2 {
+  font-family: Arial, sans-serif;
+}
+
+/* Form styling */
+form {
+  margin-top: 1rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form button {
+  margin-top: 0.5rem;
+}
